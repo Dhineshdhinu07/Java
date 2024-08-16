@@ -60,7 +60,7 @@ public class VectorTesting {
         t2.join();
         end = System.currentTimeMillis();
 
-        System.out.println("Added elements to a multithreaded way to Vector in: " + (end - start) + "ms");
+        System.out.println("Added elements to a multithreaded way to Vector: " + (end - start) + "ms");
 
     }
 }
