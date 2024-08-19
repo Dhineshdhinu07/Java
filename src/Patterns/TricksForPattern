@@ -1,0 +1,7 @@
+How to Approach:
+-> No.of.Lines = N0.of.rows = no.of.times the outer loop should run.
+-> Identify for every row No. => How many cols are there
+                              => Types of element in it
+-> What you need to print
+->
+

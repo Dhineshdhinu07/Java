@@ -1,3 +1,5 @@
+package LeetCode_Problems;
+
 public class HillPatternWeight {
     public static int calculateTotalWeight(int totalLevels, int headLevelWeight, int weightIncrement) {
         int totalWeight = 0;

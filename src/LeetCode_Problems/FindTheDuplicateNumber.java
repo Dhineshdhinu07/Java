@@ -1,3 +1,5 @@
+package LeetCode_Problems;
+
 public class FindTheDuplicateNumber {
     public static void main(String[] args) {
         int[] nums = {1,3,4,2,2};

@@ -1,3 +1,5 @@
+package LeetCode_Problems;
+
 public class SumofNonPrimeIndex {
     public static void main(String[] args) {
         int[] input1 = {10,20,30,40,50,60,70,80,90,100};
