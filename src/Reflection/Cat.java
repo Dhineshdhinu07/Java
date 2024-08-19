@@ -33,4 +33,5 @@ public class Cat {
     private static void thisIsAPrivateStaticMethod(){
         System.out.println("Im private and static");
     }
+
 }

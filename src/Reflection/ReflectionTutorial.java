@@ -25,7 +25,6 @@ public class ReflectionTutorial {
                 method.setAccessible(true);
                 method.invoke(null);
             }
-
         }
     }
 }

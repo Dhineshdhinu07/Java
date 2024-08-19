@@ -15,6 +15,7 @@ public class SetAndHashSet {
         Iterator<String> nam = names.iterator();
         while(nam.hasNext()){
             System.out.println(nam.next());
+
         }
     }
 }
