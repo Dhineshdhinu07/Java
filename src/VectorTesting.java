@@ -4,7 +4,7 @@ public class VectorTesting {
     public static void main(String[] args) throws InterruptedException {
 
         int size = 1000000;
-        List<Integer> arrayList = new ArrayList<>();
+        List<Integer> arrayList = Collections.synchronizedList(new ArrayList<>());
         long start = System.currentTimeMillis();
         for (int i = 0; i < size; i++) {
             arrayList.add(i);

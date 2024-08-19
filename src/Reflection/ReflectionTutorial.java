@@ -12,6 +12,7 @@ public class ReflectionTutorial {
                 field.setAccessible(true);
                 field.set(myCat, "Tom");
             }
+            System.out.println(myCat.getName());
         }
         Method[] catMethods = myCat.getClass().getDeclaredMethods();
 //        for (Method method : catMethods){
