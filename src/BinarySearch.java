@@ -3,7 +3,7 @@ public class BinarySearch {
         int[] arr = {-2, -1, 0, 3, 4, 8, 10, 12};
         int target = 15;
         int ans = binarySearch(arr, target);
-        System.out.println(ans); 
+        System.out.println(ans);
     }
 
     public static int binarySearch(int[] arr, int target) {
@@ -13,7 +13,7 @@ public class BinarySearch {
             int mid = left + (right - left) / 2; 
 
             if (target == arr[mid]) {
-                return mid;
+                return mid; 
             } else if (target < arr[mid]) {
                 right = mid - 1; 
             } else {
