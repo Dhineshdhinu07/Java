@@ -9,19 +9,19 @@ public class MergeSortInPlace {
         System.out.println(Arrays.toString(arr));
 
     }
-    static void mergeSortInPlace(int[] arr, int s, int e){
-        if(e - s == 1){
+    static void mergeSortInPlace(int[] arr, int start, int end){
+        if(end - start == 1){
             return;
         }
-        int mid = (s + e) / 2;
-        mergeSortInPlace(arr, s , mid);//Left
-        mergeSortInPlace(arr, mid, e);//Right
-        mergeInPlace(arr, s, mid, e);// Merge
+        int mid = (start + end) / 2;
+        mergeSortInPlace(arr, start, mid);//Left
+        mergeSortInPlace(arr, mid, end);//Right
+        mergeInPlace(arr, start, mid, end);// Merge
     }
-    static void mergeInPlace(int[] arr, int s, int mid, int e){
-        int[] mergeArr = new int[e - s];
-        int i = s, j = mid, k = 0;
-        while(i < mid && j < e){
+    static void mergeInPlace(int[] arr, int start, int mid, int end){
+        int[] mergeArr = new int[end - start];
+        int i = start, j = mid, k = 0;
+        while(i < mid && j < end){
             if(arr[i] < arr[j]){
                 mergeArr[k] = arr[i];
                 i++;
@@ -37,11 +37,11 @@ public class MergeSortInPlace {
             i++;
             k++;
         }
-        while (j < e){
+        while (j < end){
             mergeArr[k] = arr[j];
             j++;
             k++;
         }
-        System.arraycopy(mergeArr, 0, arr, s, mergeArr.length);
+        System.arraycopy(mergeArr, 0, arr, start, mergeArr.length);
     }
 }
