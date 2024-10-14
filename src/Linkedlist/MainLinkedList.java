@@ -9,14 +9,13 @@ public class MainLinkedList {
         list.insertFirst(2);
         list.insertFirst(1);
         list.insertLast(6);
-        list.insert(7,3);
-        list.display();
+        list.insertLast(7);
+        list.insert(0,0);
         System.out.println(list.deleteFirst());
-        list.display();
         System.out.println(list.deleteLast());
-        list.display();
         System.out.println(list.delete(2));
+
         list.display();
-        System.out.println();
+
     }
 }
